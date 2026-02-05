@@ -1,0 +1,452 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta http-equiv="Content-Style-Type" content="text/css">
+  <title></title>
+  <meta name="Generator" content="Cocoa HTML Writer">
+  <meta name="CocoaVersion" content="2685.4">
+  <style type="text/css">
+    p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; font: 14.0px Menlo; color: #6d6d6d; -webkit-text-stroke: #6d6d6d}
+    p.p2 {margin: 0.0px 0.0px 0.0px 0.0px; font: 14.0px Menlo; color: #6b0001; -webkit-text-stroke: #6b0001}
+    p.p3 {margin: 0.0px 0.0px 0.0px 0.0px; font: 14.0px Menlo; color: #fb0007; -webkit-text-stroke: #fb0007}
+    p.p4 {margin: 0.0px 0.0px 0.0px 0.0px; font: 14.0px Menlo; color: #0000ff; -webkit-text-stroke: #0000ff}
+    p.p5 {margin: 0.0px 0.0px 0.0px 0.0px; font: 14.0px Menlo; -webkit-text-stroke: #000000}
+    p.p6 {margin: 0.0px 0.0px 0.0px 0.0px; font: 14.0px Menlo; color: #4d5055; -webkit-text-stroke: #4d5055}
+    p.p7 {margin: 0.0px 0.0px 0.0px 0.0px; font: 14.0px Menlo; -webkit-text-stroke: #000000; min-height: 16.0px}
+    span.s1 {font-kerning: none; background-color: #ecf1f7}
+    span.s2 {font-kerning: none; color: #fb0007; background-color: #ecf1f7; -webkit-text-stroke: 0px #fb0007}
+    span.s3 {font-kerning: none; color: #2a2a2a; background-color: #ecf1f7; -webkit-text-stroke: 0px #2a2a2a}
+    span.s4 {font-kerning: none; color: #000000; background-color: #ecf1f7; -webkit-text-stroke: 0px #000000}
+    span.s5 {font-kerning: none; color: #0000ff; background-color: #ecf1f7; -webkit-text-stroke: 0px #0000ff}
+    span.s6 {font-kerning: none; color: #6b0001; background-color: #ecf1f7; -webkit-text-stroke: 0px #6b0001}
+    span.s7 {font-kerning: none; color: #137646; background-color: #ecf1f7; -webkit-text-stroke: 0px #137646}
+    span.s8 {font-kerning: none; color: #093c94; background-color: #ecf1f7; -webkit-text-stroke: 0px #093c94}
+    span.s9 {font-kerning: none}
+  </style>
+</head>
+<body>
+<p class="p1"><span class="s1">&lt;!DOCTYPE</span><span class="s2"> html</span><span class="s1">&gt;</span></p>
+<p class="p2"><span class="s3">&lt;</span><span class="s1">html</span><span class="s4"> </span><span class="s2">lang</span><span class="s3">=</span><span class="s5">"en"</span><span class="s3">&gt;</span></p>
+<p class="p2"><span class="s3">&lt;</span><span class="s1">head</span><span class="s3">&gt;</span></p>
+<p class="p3"><span class="s4"><span class="Apple-converted-space">    </span></span><span class="s3">&lt;</span><span class="s6">meta</span><span class="s4"> </span><span class="s1">charset</span><span class="s3">=</span><span class="s5">"UTF-8"</span><span class="s3">&gt;</span></p>
+<p class="p4"><span class="s4"><span class="Apple-converted-space">    </span></span><span class="s3">&lt;</span><span class="s6">meta</span><span class="s4"> </span><span class="s2">name</span><span class="s3">=</span><span class="s1">"viewport"</span><span class="s4"> </span><span class="s2">content</span><span class="s3">=</span><span class="s1">"width=device-width, initial-scale=1.0"</span><span class="s3">&gt;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">    </span></span><span class="s3">&lt;</span><span class="s6">title</span><span class="s3">&gt;</span><span class="s1">Border Watch Assistant</span><span class="s3">&lt;/</span><span class="s6">title</span><span class="s3">&gt;</span></p>
+<p class="p6"><span class="s4"><span class="Apple-converted-space">    </span></span><span class="s1">&lt;!-- Tailwind CSS --&gt;</span></p>
+<p class="p4"><span class="s4"><span class="Apple-converted-space">    </span></span><span class="s3">&lt;</span><span class="s6">script</span><span class="s4"> </span><span class="s2">src</span><span class="s3">=</span><span class="s1">"https://cdn.tailwindcss.com"</span><span class="s3">&gt;&lt;/</span><span class="s6">script</span><span class="s3">&gt;</span></p>
+<p class="p6"><span class="s4"><span class="Apple-converted-space">    </span></span><span class="s1">&lt;!-- React &amp; ReactDOM --&gt;</span></p>
+<p class="p4"><span class="s4"><span class="Apple-converted-space">    </span></span><span class="s3">&lt;</span><span class="s6">script</span><span class="s4"> </span><span class="s2">crossorigin</span><span class="s4"> </span><span class="s2">src</span><span class="s3">=</span><span class="s1">"https://unpkg.com/react@18/umd/react.production.min.js"</span><span class="s3">&gt;&lt;/</span><span class="s6">script</span><span class="s3">&gt;</span></p>
+<p class="p4"><span class="s4"><span class="Apple-converted-space">    </span></span><span class="s3">&lt;</span><span class="s6">script</span><span class="s4"> </span><span class="s2">crossorigin</span><span class="s4"> </span><span class="s2">src</span><span class="s3">=</span><span class="s1">"https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"</span><span class="s3">&gt;&lt;/</span><span class="s6">script</span><span class="s3">&gt;</span></p>
+<p class="p6"><span class="s4"><span class="Apple-converted-space">    </span></span><span class="s1">&lt;!-- Babel for JSX --&gt;</span></p>
+<p class="p4"><span class="s4"><span class="Apple-converted-space">    </span></span><span class="s3">&lt;</span><span class="s6">script</span><span class="s4"> </span><span class="s2">src</span><span class="s3">=</span><span class="s1">"https://unpkg.com/@babel/standalone/babel.min.js"</span><span class="s3">&gt;&lt;/</span><span class="s6">script</span><span class="s3">&gt;</span></p>
+<p class="p7"><span class="s1"><span class="Apple-converted-space">    </span></span></p>
+<p class="p2"><span class="s4"><span class="Apple-converted-space">    </span></span><span class="s3">&lt;</span><span class="s1">style</span><span class="s3">&gt;</span></p>
+<p class="p6"><span class="s4"><span class="Apple-converted-space">        </span></span><span class="s1">/* Custom scrollbar for cleaner look */</span></p>
+<p class="p2"><span class="s4"><span class="Apple-converted-space">        </span></span><span class="s1">::-webkit-scrollbar</span><span class="s4"> { </span><span class="s2">width:</span><span class="s4"> </span><span class="s7">8px</span><span class="s4">; }</span></p>
+<p class="p2"><span class="s4"><span class="Apple-converted-space">        </span></span><span class="s1">::-webkit-scrollbar-track</span><span class="s4"> { </span><span class="s2">background:</span><span class="s4"> </span><span class="s8">#f1f5f9</span><span class="s4">; }</span></p>
+<p class="p2"><span class="s4"><span class="Apple-converted-space">        </span></span><span class="s1">::-webkit-scrollbar-thumb</span><span class="s4"> { </span><span class="s2">background:</span><span class="s4"> </span><span class="s8">#cbd5e1</span><span class="s4">; </span><span class="s2">border-radius:</span><span class="s4"> </span><span class="s7">4px</span><span class="s4">; }</span></p>
+<p class="p2"><span class="s4"><span class="Apple-converted-space">        </span></span><span class="s1">::-webkit-scrollbar-thumb:hover</span><span class="s4"> { </span><span class="s2">background:</span><span class="s4"> </span><span class="s8">#94a3b8</span><span class="s4">; }</span></p>
+<p class="p2"><span class="s4"><span class="Apple-converted-space">    </span></span><span class="s3">&lt;/</span><span class="s1">style</span><span class="s3">&gt;</span></p>
+<p class="p2"><span class="s3">&lt;/</span><span class="s1">head</span><span class="s3">&gt;</span></p>
+<p class="p4"><span class="s3">&lt;</span><span class="s6">body</span><span class="s4"> </span><span class="s2">class</span><span class="s3">=</span><span class="s1">"bg-slate-50 text-slate-900 font-sans selection:bg-blue-100"</span><span class="s3">&gt;</span></p>
+<p class="p4"><span class="s4"><span class="Apple-converted-space">    </span></span><span class="s3">&lt;</span><span class="s6">div</span><span class="s4"> </span><span class="s2">id</span><span class="s3">=</span><span class="s1">"root"</span><span class="s3">&gt;&lt;/</span><span class="s6">div</span><span class="s3">&gt;</span></p>
+<p class="p7"><span class="s9"></span><br></p>
+<p class="p4"><span class="s4"><span class="Apple-converted-space">    </span></span><span class="s3">&lt;</span><span class="s6">script</span><span class="s4"> </span><span class="s2">type</span><span class="s3">=</span><span class="s1">"text/babel"</span><span class="s3">&gt;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">        </span>const { useState, useEffect } = React;</span></p>
+<p class="p7"><span class="s9"></span><br></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">        </span>// --- ICONS (Inline SVGs to avoid dependency issues) ---</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">        </span>const ShieldCheckIcon = ({className}) =&gt; (</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span>&lt;svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className={className}&gt;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                </span>&lt;path strokeLinecap="round" strokeLinejoin="round" d="M9 12.75L11.25 15 15 9.75M21 12c0 1.268-.63 2.39-1.593 3.068a3.745 3.745 0 01-1.043 3.296 3.745 3.745 0 01-3.296 1.043A3.745 3.745 0 0112 21c-1.268 0-2.39-.63-3.068-1.593a3.746 3.746 0 01-3.296-1.043 3.745 3.745 0 01-1.043-3.296A3.745 3.745 0 013 12c0-1.268.63-2.39 1.593-3.068a3.745 3.745 0 011.043-3.296 3.746 3.746 0 013.296-1.043A3.746 3.746 0 0112 3c1.268 0 2.39.63 3.068 1.593a3.746 3.746 0 013.296 1.043 3.746 3.746 0 011.043 3.296A3.745 3.745 0 0121 12z" /&gt;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span>&lt;/svg&gt;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">        </span>);</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">        </span>const ArrowTopRightOnSquareIcon = ({className}) =&gt; (</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span>&lt;svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className={className}&gt;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                </span>&lt;path strokeLinecap="round" strokeLinejoin="round" d="M13.5 6H5.25A2.25 2.25 0 003 8.25v10.5A2.25 2.25 0 005.25 21h10.5A2.25 2.25 0 0018 18.75V10.5m-10.5 6L21 3m0 0h-5.25M21 3v5.25" /&gt;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span>&lt;/svg&gt;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">        </span>);</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">        </span>const DocumentTextIcon = ({className}) =&gt; (</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span>&lt;svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className={className}&gt;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                </span>&lt;path strokeLinecap="round" strokeLinejoin="round" d="M19.5 14.25v-2.625a3.375 3.375 0 00-3.375-3.375h-1.5A1.125 1.125 0 0113.5 7.125v-1.5a3.375 3.375 0 00-3.375-3.375H8.25m0 12.75h7.5m-7.5 3H12M10.5 2.25H5.625c-.621 0-1.125.504-1.125 1.125v17.25c0 .621.504 1.125 1.125 1.125h12.75c.621 0 1.125-.504 1.125-1.125V11.25a9 9 0 00-9-9z" /&gt;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span>&lt;/svg&gt;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">        </span>);</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">        </span>const SparklesIcon = ({className}) =&gt; (</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span>&lt;svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className={className}&gt;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                </span>&lt;path strokeLinecap="round" strokeLinejoin="round" d="M9.813 15.904L9 18.75l-.813-2.846a4.5 4.5 0 00-3.09-3.09L2.25 12l2.846-.813a4.5 4.5 0 003.09-3.09L9 5.25l.813 2.846a4.5 4.5 0 003.09 3.09L15.75 12l-2.846.813a4.5 4.5 0 00-3.09 3.09zM18.259 8.715L18 9.75l-.259-1.035a3.375 3.375 0 00-2.455-2.456L14.25 6l1.036-.259a3.375 3.375 0 002.455-2.456L18 2.25l.259 1.035a3.375 3.375 0 002.456 2.456L21.75 6l-1.035.259a3.375 3.375 0 00-2.456 2.456zM16.894 20.567L16.5 21.75l-.394-1.183a2.25 2.25 0 00-1.423-1.423L13.5 18.75l1.183-.394a2.25 2.25 0 001.423-1.423l.394-1.183.394 1.183a2.25 2.25 0 001.423 1.423l1.183.394-1.183.394a2.25 2.25 0 00-1.423 1.423z" /&gt;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span>&lt;/svg&gt;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">        </span>);</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">        </span>const ClipboardDocumentCheckIcon = ({className}) =&gt; (</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span>&lt;svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className={className}&gt;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                </span>&lt;path strokeLinecap="round" strokeLinejoin="round" d="M11.35 3.836c-.065.21-.1.433-.1.664 0 .414.336.75.75.75h4.5a.75.75 0 00.75-.75 2.25 2.25 0 00-.1-.664m-5.8 0A2.251 2.251 0 0113.5 2.25H15c1.012 0 1.867.668 2.15 1.586m-5.8 0c-.376.023-.75.05-1.124.08C9.095 4.01 8.25 4.973 8.25 6.108V8.25m0 0H4.875c-.621 0-1.125.504-1.125 1.125v11.25c0 .621.504 1.125 1.125 1.125h9.75c.621 0 1.125-.504 1.125-1.125V9.375c0-.621-.504-1.125-1.125-1.125H8.25zM6.75 12h.008v.008H6.75V12zm0 3h.008v.008H6.75V15zm0 3h.008v.008H6.75V18z" /&gt;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                </span>&lt;path strokeLinecap="round" strokeLinejoin="round" d="M20.25 6.375c0 2.278-3.694 4.125-8.25 4.125S3.75 8.653 3.75 6.375m16.5 0c0-2.278-3.694-4.125-8.25-4.125S3.75 4.097 3.75 6.375m16.5 0v11.25c0 2.278-3.694 4.125-8.25 4.125s-8.25-1.847-8.25-4.125V6.375m16.5 0v3.75m-16.5-3.75v3.75m16.5 0v3.75C20.25 16.153 16.556 18 12 18s-8.25-1.847-8.25-4.125v-3.75m16.5 0c0 2.278-3.694 4.125-8.25 4.125s-8.25-1.847-8.25-4.125" /&gt;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span>&lt;/svg&gt;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">        </span>);</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">        </span>const ClockIcon = ({className}) =&gt; (</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span>&lt;svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className={className}&gt;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                </span>&lt;path strokeLinecap="round" strokeLinejoin="round" d="M12 6v6h4.5m4.5 0a9 9 0 11-18 0 9 9 0 0118 0z" /&gt;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span>&lt;/svg&gt;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">        </span>);</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">        </span>const MapPinIcon = ({className}) =&gt; (</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span>&lt;svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className={className}&gt;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                </span>&lt;path strokeLinecap="round" strokeLinejoin="round" d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z" /&gt;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                </span>&lt;path strokeLinecap="round" strokeLinejoin="round" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z" /&gt;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span>&lt;/svg&gt;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">        </span>);</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">        </span>const UserIcon = ({className}) =&gt; (</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span>&lt;svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className={className}&gt;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                </span>&lt;path strokeLinecap="round" strokeLinejoin="round" d="M15.75 6a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0zM4.501 20.118a7.5 7.5 0 0114.998 0A17.933 17.933 0 0112 21.75c-2.676 0-5.216-.584-7.499-1.632z" /&gt;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span>&lt;/svg&gt;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">        </span>);</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">        </span>const TrashIcon = ({className}) =&gt; (</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span>&lt;svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className={className}&gt;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                </span>&lt;path strokeLinecap="round" strokeLinejoin="round" d="M14.74 9l-.346 9m-4.788 0L9.26 9m9.968-3.21c.342.052.682.107 1.022.166m-1.022-.165L18.16 19.673a2.25 2.25 0 01-2.244 2.077H8.084a2.25 2.25 0 01-2.244-2.077L4.772 5.79m14.456 0a48.108 48.108 0 00-3.478-.397m-12 .562c.34-.059.68-.114 1.022-.165m0 0a48.11 48.11 0 013.478-.397m7.5 0v-.916c0-1.18-.91-2.164-2.09-2.201a51.964 51.964 0 00-3.32 0c-1.18.037-2.09 1.022-2.09 2.201v.916m7.5 0a48.667 48.667 0 00-7.5 0" /&gt;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span>&lt;/svg&gt;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">        </span>);</span></p>
+<p class="p7"><span class="s9"></span><br></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">        </span>// --- MAIN APP COMPONENT ---</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">        </span>function App() {</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span>const [activeTab, setActiveTab] = useState('draft');</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span>const [logs, setLogs] = useState([]);</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span>const [formData, setFormData] = useState({</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                </span>subject: '',</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                </span>location: '',</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                </span>datetime: '',</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                </span>details: '',</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                </span>personsInvolved: ''</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span>});</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span>const [aiOptimized, setAiOptimized] = useState(false);</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span>const [notification, setNotification] = useState(null);</span></p>
+<p class="p7"><span class="s9"></span><br></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span>// Load logs from local storage on mount</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span>useEffect(() =&gt; {</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                </span>const savedLogs = localStorage.getItem('borderWatchLogs');</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                </span>if (savedLogs) {</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                    </span>setLogs(JSON.parse(savedLogs));</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                </span>}</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span>}, []);</span></p>
+<p class="p7"><span class="s9"></span><br></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span>// Save logs to local storage whenever they change</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span>useEffect(() =&gt; {</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                </span>localStorage.setItem('borderWatchLogs', JSON.stringify(logs));</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span>}, [logs]);</span></p>
+<p class="p7"><span class="s9"></span><br></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span>const handleInputChange = (e) =&gt; {</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                </span>const { name, value } = e.target;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                </span>setFormData(prev =&gt; ({</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                    </span>...prev,</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                    </span>[name]: value</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                </span>}));</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                </span>setAiOptimized(false);</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span>};</span></p>
+<p class="p7"><span class="s9"></span><br></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span>// Mock AI cleanup function</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span>const optimizeText = () =&gt; {</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                </span>if (!formData.details) {</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                    </span>showNotification("Please enter some details first.", "error");</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                    </span>return;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                </span>}</span></p>
+<p class="p7"><span class="s1"><span class="Apple-converted-space">                </span></span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                </span>// Simulating an AI refinement</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                </span>const polished = `[STRUCTURED INCIDENT REPORT]\n\nSUMMARY:\n${formData.subject.toUpperCase()}\n\nOBSERVATION:\n${formData.details}\n\nKEY IDENTIFIERS:\n${formData.personsInvolved || 'Not specified'}`;</span></p>
+<p class="p7"><span class="s1"><span class="Apple-converted-space">                </span></span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                </span>setFormData(prev =&gt; ({</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                    </span>...prev,</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                    </span>details: polished</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                </span>}));</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                </span>setAiOptimized(true);</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                </span>showNotification("Report description optimized for clarity.", "success");</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span>};</span></p>
+<p class="p7"><span class="s9"></span><br></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span>const saveLog = () =&gt; {</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                </span>if (!formData.subject || !formData.details) {</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                    </span>showNotification("Subject and Details are required to save.", "error");</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                    </span>return;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                </span>}</span></p>
+<p class="p7"><span class="s9"></span><br></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                </span>const newLog = {</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                    </span>id: Date.now(),</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                    </span>timestamp: new Date().toLocaleString(),</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                    </span>...formData,</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                    </span>status: 'Ready for Submission'</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                </span>};</span></p>
+<p class="p7"><span class="s9"></span><br></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                </span>setLogs([newLog, ...logs]);</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                </span>showNotification("Report saved to local history.", "success");</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span>};</span></p>
+<p class="p7"><span class="s9"></span><br></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span>const deleteLog = (id) =&gt; {</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                </span>setLogs(logs.filter(log =&gt; log.id !== id));</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span>};</span></p>
+<p class="p7"><span class="s9"></span><br></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span>const showNotification = (message, type) =&gt; {</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                </span>setNotification({ message, type });</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                </span>setTimeout(() =&gt; setNotification(null), 3000);</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span>};</span></p>
+<p class="p7"><span class="s9"></span><br></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span>const copyToClipboard = (text) =&gt; {</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                </span>navigator.clipboard.writeText(text).then(() =&gt; {</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                    </span>showNotification("Copied to clipboard!", "success");</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                </span>});</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span>};</span></p>
+<p class="p7"><span class="s9"></span><br></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span>const openOfficialForm = () =&gt; {</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                </span>window.open('https://www.homeaffairs.gov.au/help-and-support/departmental-forms/online-forms/border-watch', '_blank');</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span>};</span></p>
+<p class="p7"><span class="s9"></span><br></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span>return (</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                </span>&lt;div className="min-h-screen bg-slate-50 text-slate-900 font-sans selection:bg-blue-100 pb-20"&gt;</span></p>
+<p class="p7"><span class="s1"><span class="Apple-converted-space">                    </span></span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                    </span>{/* Header */}</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;header className="bg-slate-900 text-white shadow-lg sticky top-0 z-50"&gt;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                        </span>&lt;div className="max-w-4xl mx-auto px-4 py-4 flex items-center justify-between"&gt;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                            </span>&lt;div className="flex items-center space-x-3"&gt;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                                </span>&lt;ShieldCheckIcon className="h-8 w-8 text-blue-400" /&gt;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                                </span>&lt;div&gt;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                                    </span>&lt;h1 className="text-xl font-bold tracking-tight"&gt;Report Assistant&lt;/h1&gt;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                                    </span>&lt;p className="text-xs text-slate-400"&gt;Unofficial Drafting Tool for Border Watch&lt;/p&gt;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                                </span>&lt;/div&gt;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                            </span>&lt;/div&gt;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                            </span>&lt;button<span class="Apple-converted-space"> </span></span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                                </span>onClick={openOfficialForm}</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                                </span>className="flex items-center space-x-2 bg-blue-600 hover:bg-blue-500 text-white px-4 py-2 rounded-lg text-sm font-medium transition-colors"</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                            </span>&gt;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                                </span>&lt;span className="hidden sm:inline"&gt;Open Official Form&lt;/span&gt;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                                </span>&lt;span className="sm:hidden"&gt;Form&lt;/span&gt;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                                </span>&lt;ArrowTopRightOnSquareIcon className="h-4 w-4" /&gt;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                            </span>&lt;/button&gt;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                        </span>&lt;/div&gt;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;/header&gt;</span></p>
+<p class="p7"><span class="s9"></span><br></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;main className="max-w-4xl mx-auto px-4 py-8"&gt;</span></p>
+<p class="p7"><span class="s1"><span class="Apple-converted-space">                        </span></span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                        </span>{/* Navigation Tabs */}</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                        </span>&lt;div className="flex space-x-1 bg-white p-1 rounded-xl shadow-sm border border-slate-200 mb-8 w-fit mx-auto md:mx-0"&gt;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                            </span>&lt;button</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                                </span>onClick={() =&gt; setActiveTab('draft')}</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                                </span>className={`px-6 py-2 rounded-lg text-sm font-medium transition-all ${activeTab === 'draft' ? 'bg-slate-900 text-white shadow-md' : 'text-slate-600 hover:bg-slate-100'}`}</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                            </span>&gt;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                                </span>Draft Report</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                            </span>&lt;/button&gt;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                            </span>&lt;button</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                                </span>onClick={() =&gt; setActiveTab('logs')}</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                                </span>className={`px-6 py-2 rounded-lg text-sm font-medium transition-all ${activeTab === 'logs' ? 'bg-slate-900 text-white shadow-md' : 'text-slate-600 hover:bg-slate-100'}`}</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                            </span>&gt;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                                </span>History Log ({logs.length})</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                            </span>&lt;/button&gt;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                        </span>&lt;/div&gt;</span></p>
+<p class="p7"><span class="s9"></span><br></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                        </span>{activeTab === 'draft' ? (</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                            </span>&lt;div className="grid md:grid-cols-3 gap-6"&gt;</span></p>
+<p class="p7"><span class="s1"><span class="Apple-converted-space">                                </span></span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                                </span>{/* Form Section */}</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                                </span>&lt;div className="md:col-span-2 space-y-6"&gt;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                                    </span>&lt;div className="bg-white p-6 rounded-2xl shadow-sm border border-slate-200"&gt;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                                        </span>&lt;h2 className="text-lg font-semibold text-slate-800 mb-4 flex items-center"&gt;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                                            </span>&lt;DocumentTextIcon className="h-5 w-5 mr-2 text-blue-600" /&gt;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                                            </span>Incident Details</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                                        </span>&lt;/h2&gt;</span></p>
+<p class="p7"><span class="s1"><span class="Apple-converted-space">                                        </span></span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                                        </span>&lt;div className="space-y-4"&gt;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                                            </span>&lt;div&gt;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                                                </span>&lt;label className="block text-sm font-medium text-slate-700 mb-1"&gt;Subject / Type of Suspicious Activity&lt;/label&gt;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                                                </span>&lt;input<span class="Apple-converted-space"> </span></span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                                                    </span>type="text"<span class="Apple-converted-space"> </span></span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                                                    </span>name="subject"</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                                                    </span>value={formData.subject}</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                                                    </span>onChange={handleInputChange}</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                                                    </span>placeholder="e.g., Visa overstay, Illegal worker..."</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                                                    </span>className="w-full p-3 border border-slate-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 outline-none transition-all"</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                                                </span>/&gt;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                                            </span>&lt;/div&gt;</span></p>
+<p class="p7"><span class="s9"></span><br></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                                            </span>&lt;div className="grid grid-cols-1 md:grid-cols-2 gap-4"&gt;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                                                </span>&lt;div&gt;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                                                    </span>&lt;label className="block text-sm font-medium text-slate-700 mb-1"&gt;Date &amp; Time Observed&lt;/label&gt;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                                                    </span>&lt;input<span class="Apple-converted-space"> </span></span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                                                        </span>type="datetime-local"<span class="Apple-converted-space"> </span></span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                                                        </span>name="datetime"</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                                                        </span>value={formData.datetime}</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                                                        </span>onChange={handleInputChange}</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                                                        </span>className="w-full p-3 border border-slate-300 rounded-lg focus:ring-2 focus:ring-blue-500 outline-none"</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                                                    </span>/&gt;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                                                </span>&lt;/div&gt;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                                                </span>&lt;div&gt;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                                                    </span>&lt;label className="block text-sm font-medium text-slate-700 mb-1"&gt;Location&lt;/label&gt;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                                                    </span>&lt;input<span class="Apple-converted-space"> </span></span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                                                        </span>type="text"<span class="Apple-converted-space"> </span></span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                                                        </span>name="location"</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                                                        </span>value={formData.location}</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                                                        </span>onChange={handleInputChange}</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                                                        </span>placeholder="Address or coordinates"</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                                                        </span>className="w-full p-3 border border-slate-300 rounded-lg focus:ring-2 focus:ring-blue-500 outline-none"</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                                                    </span>/&gt;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                                                </span>&lt;/div&gt;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                                            </span>&lt;/div&gt;</span></p>
+<p class="p7"><span class="s9"></span><br></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                                            </span>&lt;div&gt;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                                                </span>&lt;label className="block text-sm font-medium text-slate-700 mb-1"&gt;Persons Involved (Names/Descriptions)&lt;/label&gt;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                                                </span>&lt;textarea<span class="Apple-converted-space"> </span></span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                                                    </span>name="personsInvolved"</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                                                    </span>value={formData.personsInvolved}</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                                                    </span>onChange={handleInputChange}</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                                                    </span>rows="3"</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                                                    </span>placeholder="Name, age, nationality, physical description..."</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                                                    </span>className="w-full p-3 border border-slate-300 rounded-lg focus:ring-2 focus:ring-blue-500 outline-none"</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                                                </span>&gt;&lt;/textarea&gt;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                                            </span>&lt;/div&gt;</span></p>
+<p class="p7"><span class="s9"></span><br></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                                            </span>&lt;div&gt;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                                                </span>&lt;label className="block text-sm font-medium text-slate-700 mb-1"&gt;Detailed Description&lt;/label&gt;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                                                </span>&lt;textarea<span class="Apple-converted-space"> </span></span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                                                    </span>name="details"</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                                                    </span>value={formData.details}</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                                                    </span>onChange={handleInputChange}</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                                                    </span>rows="6"</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                                                    </span>placeholder="Describe exactly what happened..."</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                                                    </span>className="w-full p-3 border border-slate-300 rounded-lg focus:ring-2 focus:ring-blue-500 outline-none"</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                                                </span>&gt;&lt;/textarea&gt;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                                            </span>&lt;/div&gt;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                                        </span>&lt;/div&gt;</span></p>
+<p class="p7"><span class="s9"></span><br></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                                        </span>&lt;div className="mt-6 flex flex-wrap gap-3"&gt;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                                            </span>&lt;button<span class="Apple-converted-space"> </span></span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                                                </span>onClick={optimizeText}</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                                                </span>className="flex items-center px-4 py-2 bg-purple-50 text-purple-700 border border-purple-200 rounded-lg hover:bg-purple-100 transition-colors"</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                                            </span>&gt;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                                                </span>&lt;SparklesIcon className="h-4 w-4 mr-2" /&gt;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                                                </span>{aiOptimized ? 'Re-Optimize' : 'Optimize with AI'}</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                                            </span>&lt;/button&gt;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                                            </span>&lt;button<span class="Apple-converted-space"> </span></span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                                                </span>onClick={saveLog}</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                                                </span>className="flex-1 bg-slate-900 text-white px-4 py-2 rounded-lg font-medium hover:bg-slate-800 transition-colors shadow-lg shadow-slate-200"</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                                            </span>&gt;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                                                </span>Save to Log &amp; Prepare Copy</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                                            </span>&lt;/button&gt;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                                        </span>&lt;/div&gt;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                                    </span>&lt;/div&gt;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                                </span>&lt;/div&gt;</span></p>
+<p class="p7"><span class="s9"></span><br></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                                </span>{/* Helper Section */}</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                                </span>&lt;div className="space-y-6"&gt;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                                    </span>&lt;div className="bg-blue-50 border border-blue-100 p-6 rounded-2xl"&gt;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                                        </span>&lt;h3 className="font-semibold text-blue-900 mb-3"&gt;How to use&lt;/h3&gt;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                                        </span>&lt;ol className="list-decimal list-inside text-sm text-blue-800 space-y-2"&gt;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                                            </span>&lt;li&gt;Fill out the details on the left.&lt;/li&gt;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                                            </span>&lt;li&gt;Click &lt;strong&gt;Optimize with AI&lt;/strong&gt; to structure the text.&lt;/li&gt;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                                            </span>&lt;li&gt;Click &lt;strong&gt;Save to Log&lt;/strong&gt; to keep a record.&lt;/li&gt;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                                            </span>&lt;li&gt;Click &lt;strong&gt;Open Official Form&lt;/strong&gt; (top right).&lt;/li&gt;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                                            </span>&lt;li&gt;Copy and paste your drafted details into the DHA website.&lt;/li&gt;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                                        </span>&lt;/ol&gt;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                                    </span>&lt;/div&gt;</span></p>
+<p class="p7"><span class="s9"></span><br></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                                    </span>&lt;div className="bg-white p-6 rounded-2xl shadow-sm border border-slate-200"&gt;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                                        </span>&lt;h3 className="font-semibold text-slate-800 mb-3"&gt;Quick Copy&lt;/h3&gt;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                                        </span>&lt;p className="text-xs text-slate-500 mb-4"&gt;Click below to copy specific fields for the official form.&lt;/p&gt;</span></p>
+<p class="p7"><span class="s1"><span class="Apple-converted-space">                                        </span></span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                                        </span>&lt;div className="space-y-2"&gt;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                                            </span>&lt;button<span class="Apple-converted-space"> </span></span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                                                </span>onClick={() =&gt; copyToClipboard(formData.details)}</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                                                </span>className="w-full flex items-center justify-between p-3 bg-slate-50 hover:bg-slate-100 rounded-lg border border-slate-200 transition-colors group"</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                                            </span>&gt;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                                                </span>&lt;span className="text-sm font-medium text-slate-700"&gt;Copy Main Description&lt;/span&gt;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                                                </span>&lt;ClipboardDocumentCheckIcon className="h-5 w-5 text-slate-400 group-hover:text-blue-600" /&gt;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                                            </span>&lt;/button&gt;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                                            </span>&lt;button<span class="Apple-converted-space"> </span></span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                                                </span>onClick={() =&gt; copyToClipboard(formData.personsInvolved)}</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                                                </span>className="w-full flex items-center justify-between p-3 bg-slate-50 hover:bg-slate-100 rounded-lg border border-slate-200 transition-colors group"</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                                            </span>&gt;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                                                </span>&lt;span className="text-sm font-medium text-slate-700"&gt;Copy Person Details&lt;/span&gt;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                                                </span>&lt;ClipboardDocumentCheckIcon className="h-5 w-5 text-slate-400 group-hover:text-blue-600" /&gt;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                                            </span>&lt;/button&gt;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                                            </span>&lt;button<span class="Apple-converted-space"> </span></span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                                                </span>onClick={() =&gt; copyToClipboard(`${formData.location} @ ${formData.datetime}`)}</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                                                </span>className="w-full flex items-center justify-between p-3 bg-slate-50 hover:bg-slate-100 rounded-lg border border-slate-200 transition-colors group"</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                                            </span>&gt;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                                                </span>&lt;span className="text-sm font-medium text-slate-700"&gt;Copy Location/Time&lt;/span&gt;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                                                </span>&lt;ClipboardDocumentCheckIcon className="h-5 w-5 text-slate-400 group-hover:text-blue-600" /&gt;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                                            </span>&lt;/button&gt;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                                        </span>&lt;/div&gt;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                                    </span>&lt;/div&gt;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                                </span>&lt;/div&gt;</span></p>
+<p class="p7"><span class="s9"></span><br></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                            </span>&lt;/div&gt;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                        </span>) : (</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                            </span>/* Logs Tab */</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                            </span>&lt;div className="space-y-4"&gt;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                                </span>{logs.length === 0 ? (</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                                    </span>&lt;div className="text-center py-20 bg-white rounded-2xl border border-dashed border-slate-300"&gt;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                                        </span>&lt;DocumentTextIcon className="h-12 w-12 text-slate-300 mx-auto mb-3" /&gt;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                                        </span>&lt;p className="text-slate-500"&gt;No reports logged yet.&lt;/p&gt;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                                    </span>&lt;/div&gt;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                                </span>) : (</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                                    </span>logs.map((log) =&gt; (</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                                        </span>&lt;div key={log.id} className="bg-white p-6 rounded-2xl shadow-sm border border-slate-200 hover:shadow-md transition-shadow"&gt;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                                            </span>&lt;div className="flex justify-between items-start mb-4"&gt;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                                                </span>&lt;div&gt;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                                                    </span>&lt;h3 className="font-bold text-lg text-slate-800"&gt;{log.subject}&lt;/h3&gt;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                                                    </span>&lt;div className="flex items-center text-xs text-slate-500 mt-1 space-x-3"&gt;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                                                        </span>&lt;span className="flex items-center"&gt;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                                                            </span>&lt;ClockIcon className="h-3 w-3 mr-1" /&gt;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                                                            </span>Created: {log.timestamp}</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                                                        </span>&lt;/span&gt;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                                                        </span>&lt;span className="flex items-center"&gt;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                                                            </span>&lt;MapPinIcon className="h-3 w-3 mr-1" /&gt;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                                                            </span>{log.location || 'No location'}</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                                                        </span>&lt;/span&gt;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                                                    </span>&lt;/div&gt;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                                                </span>&lt;/div&gt;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                                                </span>&lt;div className="flex space-x-2"&gt;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                                                    </span>&lt;button<span class="Apple-converted-space"> </span></span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                                                        </span>onClick={() =&gt; copyToClipboard(log.details)}</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                                                        </span>className="p-2 text-blue-600 hover:bg-blue-50 rounded-lg"</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                                                        </span>title="Copy details"</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                                                    </span>&gt;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                                                        </span>&lt;ClipboardDocumentCheckIcon className="h-5 w-5" /&gt;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                                                    </span>&lt;/button&gt;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                                                    </span>&lt;button<span class="Apple-converted-space"> </span></span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                                                        </span>onClick={() =&gt; deleteLog(log.id)}</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                                                        </span>className="p-2 text-red-400 hover:bg-red-50 rounded-lg"</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                                                        </span>title="Delete log"</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                                                    </span>&gt;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                                                        </span>&lt;TrashIcon className="h-5 w-5" /&gt;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                                                    </span>&lt;/button&gt;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                                                </span>&lt;/div&gt;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                                            </span>&lt;/div&gt;</span></p>
+<p class="p7"><span class="s1"><span class="Apple-converted-space">                                            </span></span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                                            </span>&lt;div className="bg-slate-50 p-4 rounded-lg border border-slate-100 text-sm text-slate-700 whitespace-pre-wrap"&gt;{log.details}&lt;/div&gt;</span></p>
+<p class="p7"><span class="s1"><span class="Apple-converted-space">                                            </span></span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                                            </span>{log.personsInvolved &amp;&amp; (</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                                                </span>&lt;div className="mt-3 flex items-start p-3 bg-blue-50 rounded-lg text-sm text-blue-900"&gt;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                                                    </span>&lt;UserIcon className="h-4 w-4 mr-2 mt-0.5 flex-shrink-0" /&gt;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                                                    </span>{log.personsInvolved}</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                                                </span>&lt;/div&gt;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                                            </span>)}</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                                        </span>&lt;/div&gt;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                                    </span>))</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                                </span>)}</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                            </span>&lt;/div&gt;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                        </span>)}</span></p>
+<p class="p7"><span class="s9"></span><br></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;/main&gt;</span></p>
+<p class="p7"><span class="s9"></span><br></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                    </span>{/* Notification Toast */}</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                    </span>{notification &amp;&amp; (</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                        </span>&lt;div className={`fixed bottom-4 right-4 px-6 py-3 rounded-xl shadow-lg transform transition-all duration-300 flex items-center ${</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                            </span>notification.type === 'success' ? 'bg-slate-800 text-white' : 'bg-red-500 text-white'</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                        </span>}`}&gt;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                            </span>{notification.type === 'success' &amp;&amp; &lt;ClipboardDocumentCheckIcon className="h-5 w-5 mr-2" /&gt;}</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                            </span>&lt;span className="font-medium text-sm"&gt;{notification.message}&lt;/span&gt;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                        </span>&lt;/div&gt;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                    </span>)}</span></p>
+<p class="p7"><span class="s9"></span><br></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                </span>&lt;/div&gt;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span>);</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">        </span>}</span></p>
+<p class="p7"><span class="s9"></span><br></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">        </span>const root = ReactDOM.createRoot(document.getElementById('root'));</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">        </span>root.render(&lt;App /&gt;);</span></p>
+<p class="p2"><span class="s4"><span class="Apple-converted-space">    </span></span><span class="s3">&lt;/</span><span class="s1">script</span><span class="s3">&gt;</span></p>
+<p class="p2"><span class="s3">&lt;/</span><span class="s1">body</span><span class="s3">&gt;</span></p>
+<p class="p2"><span class="s3">&lt;/</span><span class="s1">html</span><span class="s3">&gt;</span></p>
+</body>
+</html>
